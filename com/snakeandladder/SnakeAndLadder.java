@@ -1,8 +1,12 @@
 package com.snakeandladder;
 
+import java.util.Random;
+
 public class SnakeAndLadder {
     public static void main(String[] args) {
-        int position = 0;
-        System.out.println("Initial Position of player starts from " + position);
+        Random ran = new Random();
+
+        int dice = ran.nextInt(6) + 1;
+        System.out.println("Dice Outcome : " + dice);
     }
 }
